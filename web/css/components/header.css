@@ -168,18 +168,31 @@ header {
 
     width: 50%;
     height: 100%;
-    position: fixed;
     overflow-x: hidden;
-    top: 0px;
-    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+
     z-index: 90;
     background-color: black;
     overflow-y: auto;
-    transition: all 0.5s;/*アニメーション設定*/
     text-align: center;
 } 
-#menu-btn-check:checked ~ #menu-content {
-    left: 50%;/*メニューを画面内へ*/
+#menu-space {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    z-index: 90;
+}
+#menu-box {
+    display: flex;
+    z-index: 92;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; 
+    transition: all 0.5s;
+}
+#menu-btn-check:checked ~ #menu-box {
+    left: 0;/*メニューを画面内へ*/
 }
 .langes {
     border-bottom: 1px solid white;
