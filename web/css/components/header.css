@@ -140,18 +140,6 @@ header {
     margin-bottom: 10px;
 
 }
-#menu-content {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    width: 50%;
-    height: 100%;
-    position: fixed;
-    overflow-y: auto; /* 垂直方向にスクロール可能にする */
-    z-index: 80;
-    background-color: black;
-}
 #menu-content ul {
     padding: 0px 10px 0;
     margin-top: 0;
@@ -174,6 +162,10 @@ header {
 }
 /*下のwidthとleftの値を足して１００％にすること*/
 #menu-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     width: 50%;
     height: 100%;
     position: fixed;
