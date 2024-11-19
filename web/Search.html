@@ -14,6 +14,45 @@
     </head>
     <body>
         <div id="header"></div>
+        <!--これらはハンバーガーメニューだけど、これってfixedで固定しているだけだからヘッダーだと思ってくれ-->
+    <div id="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div id="menu-box">
+            <div id="menu-space"></div>
+            <div id="menu-content">
+                <ul>
+                    <li style="color: white;">
+                        <h1 class="menu">メニュー</h1>
+                    </li>
+                    <li class="ite blockes">
+                        <a href="TopPage.html" class="house">ホーム</a>
+                    </li>
+                    <li class="ite blockes">
+                        <a href="contact.html" class="contact">お問い合わせ</a>
+                    </li>
+                    <li class="ite blockes">
+                        <a href="Line.html" class="line">路線選択</a>
+                    </li>
+                    <li class="ite blockes">
+                        <a href="Search.html" class="site">検索</a>
+                    </li>
+                    <li class="ite blockes">
+                        <a href="Pri.html" class="site">プライバシーポリシー</a>
+                    </li>
+                </ul>
+                <div id="box">
+                    <select id="mySelect" onchange="redirectToSite()">
+                        <option value="" style="display: none;">Language</option>
+                        <option value="TopPage.html">日本語</option>
+                        <option value="TopPageEn.html">English</option>
+                    </select>
+                </div>
+            </div>
+            <!--ここまでメニュー-->
+        </div>
+    </div>
         <main>
             <!--内容上はここから始まる-->
             <div id="Maincontainer">
