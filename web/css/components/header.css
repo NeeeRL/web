@@ -178,7 +178,6 @@ header {
 #menu-space {
     width: 50%;
     height: 100%;
-    background-color: white;
     z-index: 90;
 }
 #menu-box {
@@ -274,11 +273,14 @@ header {
         background-color: black;
         border: none;
     }
+    #menu-space {
+        display: none;
+    }
     #menu-content {
         width: 100%;
         
     } 
-    #menu-btn-check:checked ~ #menu-content {
+    #menu-btn-check:checked ~ #menu-box {
         left: 0%;/*メニューを画面内へ*/
     }
     
