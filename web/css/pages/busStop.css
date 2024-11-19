@@ -144,15 +144,15 @@ main {
 /* 上り下りの色を指定 */
 .nobori{
     flex: 0.3;
-    color: red;
-    background-color: red;
+    color: #7ACCAD;
+    background-color: #7ACCAD;
     margin: 0;
 }
 
 .kudari{
     flex: 0.3;
-    color: blue;
-    background-color: blue;
+    color: #CC7A99;
+    background-color: #CC7A99;
     margin: 0;
 }
 

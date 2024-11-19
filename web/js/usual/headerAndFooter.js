@@ -1,3 +1,4 @@
+//ヘッダーとフッターの読み込み
 fetch("/header.html")
 .then((response) => response.text())
 .then((data) => document.querySelector("#header").innerHTML = data);
